@@ -1,7 +1,8 @@
 FROM camenduru/base:latest
 
-RUN git clone -b dev https://github.com/camenduru/SyncDreamer-hf && \
-	pip install -q pytorch_lightning transformers taming-transformers-rom1504 kornia webdataset gradio && \
+RUN git clone -b dev https://github.com/camenduru/SyncDreamer-hf
+
+RUN	pip install -q pytorch_lightning transformers taming-transformers-rom1504 kornia webdataset gradio && \
 	pip install -q omegaconf einops pymcubes carvekit-colab open3d trimesh nerfacc fire segment_anything && \
 	pip install -q git+https://github.com/openai/CLIP.git
 
