@@ -4,9 +4,13 @@
 
 ## 🐳 Docker
 
-| Docker Build Code | Info
+| Docker | Info
 | --- | --- |
-```docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile``` | SyncDreamer
+[Dockerfile](Dockerfile) | SyncDreamer
+
+ ```
+ docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile
+ ```
 
 ## Main Repo
 https://github.com/liuyuan-pal/SyncDreamer <br />
