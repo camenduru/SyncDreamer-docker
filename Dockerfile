@@ -7,7 +7,7 @@ USER user
 WORKDIR /content
 
 RUN	pip install -q torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 torchtext==0.15.2 torchdata==0.6.1 --extra-index-url https://download.pytorch.org/whl/cu118 && \
-	pip install xformers==0.0.20 triton==2.0.0 && \
+	pip install -q xformers==0.0.20 triton==2.0.0 && \
 	pip install -q pytorch_lightning transformers taming-transformers-rom1504 kornia webdataset gradio && \
 	pip install -q omegaconf einops pymcubes carvekit-colab open3d trimesh nerfacc fire segment_anything && \
 	pip install -q git+https://github.com/openai/CLIP.git && \
