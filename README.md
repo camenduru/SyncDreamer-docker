@@ -6,7 +6,7 @@
 
 | Docker Build Code | Info
 | --- | --- |
-`docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile` | SyncDreamer
+```docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile``` | SyncDreamer
 
 ## Main Repo
 https://github.com/liuyuan-pal/SyncDreamer <br />
