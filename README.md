@@ -6,6 +6,8 @@
 
 ```
 docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile -t camenduru/syncdreamer:latest
+```
+```
 docker run --gpus all camenduru/syncdreamer:latest
 ```
 
