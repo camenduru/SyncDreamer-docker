@@ -4,9 +4,9 @@
 
 ## 🐳 Docker
 
-| Docker | Info
-| --- | --- |
-[Dockerfile](Dockerfile) | SyncDreamer
+| Docker File | Build Code | Info
+| --- | --- | --- |
+[Dockerfile](Dockerfile) | `docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile` | SyncDreamer
 
 ## Main Repo
 https://github.com/liuyuan-pal/SyncDreamer <br />
