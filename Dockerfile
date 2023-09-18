@@ -10,12 +10,9 @@ RUN apt-get update -y && \
 	pip install -q git+https://github.com/openai/CLIP.git && \
 	adduser --disabled-password --gecos '' user && \
 	mkdir /content && \
-	chown -R user:user /content
-
-WORKDIR /content
-USER user
-
-RUN git clone -b dev https://github.com/camenduru/SyncDreamer-hf && \
+	chown -R user:user /content && \
+	cd /content && \
+	git clone -b dev https://github.com/camenduru/SyncDreamer-hf && \
 	cd /content/SyncDreamer-hf && \
 	aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SyncDreamer/resolve/main/syncdreamer-pretrain.ckpt -d /content/SyncDreamer-hf/ckpt -o syncdreamer-pretrain.ckpt && \
 	aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SyncDreamer/resolve/main/sam_vit_h_4b8939.pth -d /content/SyncDreamer-hf/ckpt -o sam_vit_h_4b8939.pth && \
@@ -30,4 +27,6 @@ RUN git clone -b dev https://github.com/camenduru/SyncDreamer-hf && \
 	aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SyncDreamer/resolve/main/teapot.png -d /content/SyncDreamer-hf/hf_demo/examples -o teapot.png && \
 	aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SyncDreamer/resolve/main/camera-16.pkl -d /content/SyncDreamer-hf/meta_info -o camera-16.pkl
 
+WORKDIR /content
+USER user
 CMD cd /content/SyncDreamer-hf && python app.py
