@@ -4,10 +4,6 @@
 
 ## 🐳 Docker
 
-| Docker | Info
-| --- | --- |
-[Dockerfile](Dockerfile) | SyncDreamer
-
  ```
  docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile
  ```
