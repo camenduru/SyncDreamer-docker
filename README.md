@@ -5,7 +5,8 @@
 ## 🐳 Docker
 
  ```
- docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile
+ docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile -t syncdreamer:latest
+ docker run --gpus all syncdreamer:latest
  ```
 
 ## Main Repo
