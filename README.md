@@ -6,7 +6,7 @@
 
 | Docker | Info
 | --- | --- |
-https://hub.docker.com/r/camenduru/syncdreamer | SyncDreamer_gradio_colab
+https://hub.docker.com/r/camenduru/syncdreamer | SyncDreamer
 
 ## Main Repo
 https://github.com/liuyuan-pal/SyncDreamer <br />
