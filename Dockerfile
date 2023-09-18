@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/cuda:12.2.0-base-ubuntu22.04
 RUN adduser --disabled-password --gecos '' user && mkdir /content && chown -R user:user /content && \
 	apt-get update && apt-get install -y --no-install-recommends aria2 wget git git-lfs python3-pip python-is-python3
 
-RUN git clone -b dev https://github.com/camenduru/SyncDreamer-hf /content/SyncDreamer-hf
+RUN git clone https://github.com/camenduru/SyncDreamer-hf /content/SyncDreamer-hf
 
 USER user
 WORKDIR /content
