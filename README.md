@@ -4,10 +4,10 @@
 
 ## 🐳 Docker
 
- ```
- docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile -t syncdreamer:latest
- docker run --gpus all syncdreamer:latest
- ```
+```
+docker build https://github.com/camenduru/SyncDreamer-docker/raw/main/Dockerfile -t camenduru/syncdreamer:latest
+docker run --gpus all camenduru/syncdreamer:latest
+```
 
 ## Main Repo
 https://github.com/liuyuan-pal/SyncDreamer <br />
